@@ -1,0 +1,24 @@
+:root {
+    --main-color: #aa0a30;
+  }
+
+
+input, button {
+    border: 1px solid var(--main-color) !important;
+    color: black !important;
+  }
+  input[type=submit] {
+      background-color: var(--main-color);
+      color:white !important;
+      border-radius:10px;
+      transition: all ease-out 500ms;
+  }
+  input[type=submit]:hover {
+      background-color: white;
+      color:var(--main-color) !important;
+      border-radius:0px;
+  }
+
+  span {
+    color: var(--main-color) !important;
+    }

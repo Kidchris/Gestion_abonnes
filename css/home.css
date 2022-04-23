@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "SegoeRegularItalic";
+  src: url("../assets/fonts/Segoe UI Bold Italic.ttf");
+}
+p,
+.uk-text-muted,
+a {
+  color: #aa0a30 !important;
+}
+
+.nom {
+  font-weight: 900;
+  font-size: large;
+  font-family: SegoeRegularItalic !important;
+}
+
+.date {
+  color: black !important;
+}
+.bord {
+  border: 1px solid #aa0a30 !important;
+}
+
+/* 
+Media
+*/
+
+@media screen and (max-width: 800px) {
+  .right {
+    display: none !important;
+  }
+}
