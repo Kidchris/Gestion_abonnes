@@ -40,8 +40,7 @@ if (isset($_POST["submit"])) {
             VALUES('$nom', '$email', '$telephone',  '$date_fin', '$imgContent')";
             $resultats = mysqli_query($connexion, $query);
             if ($resultats) {
-                // echo "Added a new one";
-                header("Location: ./home.php");
+                header("Location:  ./home.php?id=1");
                 exit;
             } else {
                 echo " <div class='uk-container'>

@@ -20,47 +20,40 @@
 
     <div class="uk-grid uk-align-center uk-width-1-3 uk-card uk-card-default add-main ">
 
-        <form action="./add_process.php" method="post" class="uk-background-muted"  enctype="multipart/form-data">
+        <form action="./add_process.php" method="post" class="uk-background-muted uk-grid uk-align-center" enctype="multipart/form-data" uk-grid>
             <img src="../images/logo/logo-v3.jpg" alt="" width="200px" height="200px" class="add-img  uk-align-center">
             <div class="uk-grid uk-algin-center ">
                 <div class="uk-margin-small">
                     <div class="uk-inline">
                         <span class="uk-form-icon" uk-icon="icon: user"></span>
-                        <input class="uk-input" type="text" placeholder="Nom Prenom" name="nom">
+                        <input class="uk-input" type="text" placeholder="Nom Prenom" name="nom" required>
                     </div>
                 </div>
 
                 <div class="uk-margin-small">
                     <div class="uk-inline">
                         <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                        <input class="uk-input" type="text" placeholder="Email" name="email">
+                        <input class="uk-input" type="text" placeholder="Email" name="email" required>
                     </div>
                 </div>
 
                 <div class="uk-margin-small">
                     <div class="uk-inline">
                         <span class="uk-form-icon" uk-icon="icon: receiver"></span>
-                        <input class="uk-input" type="text" placeholder="Telophone" name="telephone">
+                        <input class="uk-input" type="text" placeholder="Telophone" name="telephone" required>
                     </div>
                 </div>
-
-                <!-- <div class="uk-margin-small">
-                    <div class="uk-inline">
-                        <span class="uk-form-icon" uk-icon="icon: calendar"></span>
-                        <input class="uk-input" type="text" onfocus="(this.type='date')" placeholder="Date de debut" name="date_debut">
-                    </div>
-                </div> -->
 
                 <div class="uk-margin-small">
                     <div class="uk-inline">
                         <span class="uk-form-icon" uk-icon="icon: calendar"></span>
-                        <input class="uk-input" type="text" onfocus="(this.type='date')" placeholder="Date de fin" name="date_fin">
+                        <input class="uk-input" type="text" onfocus="(this.type='date')" placeholder="Date de fin" name="date_fin" required>
                     </div>
                 </div>
                 <br />
                 <div class="uk-margin">
                     <div uk-form-custom>
-                        <input type="file" name="photo"  accept="image/*">
+                        <input type="file" name="photo" accept="image/*" required>
                         <button class="uk-button" type="button" tabindex="-1">Choisir une photo</button>
                     </div>
                 </div>

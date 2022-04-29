@@ -19,6 +19,6 @@ input, button {
       border-radius:0px;
   }
 
-  span {
+  span, .inscrit {
     color: var(--main-color) !important;
     }

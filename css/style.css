@@ -1,129 +1,86 @@
-/* 
-                  =======================================================================================
-                  =============================== Variables ============================================= 
-                  =======================================================================================
-*/
-
-
 :root {
   --main-color: #aa0a30;
 }
 
-
-
-/* 
-                  =======================================================================================
-                  ================================== Fonts ============================================== 
-                  =======================================================================================
-*/
-
 @font-face {
-    font-family: "SegoeRegular";
-    src: url("../assets/fonts/Segoe UI Bold.ttf");
+  font-family: "SegoeRegular";
+  src: url("../assets/fonts/Segoe UI Bold.ttf");
 }
 
 @font-face {
-    font-family: "SegoeRegularItalic";
-    src: url("../assets/fonts/Segoe UI Bold Italic.ttf");
+  font-family: "SegoeRegularItalic";
+  src: url("../assets/fonts/Segoe UI Bold Italic.ttf");
 }
 
 @font-face {
-    font-family: "Blippo";
-    src: url("../assets/fonts/blippo.ttf");
+  font-family: "Blippo";
+  src: url("../assets/fonts/blippo.ttf");
 }
 
-/* 
-                  =======================================================================================
-                  =============================== Main Index Page ======================================= 
-                  =======================================================================================
-*/
-
-
-*{
-    font-family: SegoeRegular !important;
-    letter-spacing: 2px !important;
-    /* line-height: 2; */
+p,
+h5,
+h6 {
+  font-family: SegoeRegular !important;
+  letter-spacing: 2px !important;
 }
-
 
 .main {
   margin-bottom: 0 !important;
 }
 
-.welcome-party, 
+.welcome-party,
 input {
   border: 1px solid var(--main-color) !important;
   color: black !important;
+  font-family: initial !important;
 }
-input[type=submit] {
-    background-color: var(--main-color);
-    color:white !important;
-    border-radius:10px;
-    transition: all ease-out 500ms;
+input[type="submit"] {
+  background-color: var(--main-color);
+  color: white !important;
+  border-radius: 10px;
+  transition: all ease-out 500ms;
 }
-input[type=submit]:hover {
-    background-color: white;
-    color:var(--main-color) !important;
-    border-radius:0px;
-}
-
-.connect{
-    font-family:SegoeRegularItalic !important;
-    font-weight:bold;
-    font-size:1.2em !important;
-    color: #1f9bd7 !important;
-}
-span {
-color: var(--main-color) !important;
+input[type="submit"]:hover {
+  background-color: white;
+  color: var(--main-color) !important;
+  border-radius: 0px;
 }
 
-.form-inputs{
-    padding-top: 10% !important;
+.connect {
+  font-family: SegoeRegularItalic !important;
+  font-weight: bold;
+  font-size: 1.2em !important;
+  color: #1f9bd7 !important;
 }
-h5, h6{
-    font-size: large !important;
-}
-
-h6, 
-.auf{ 
-    color:#cecaca !important;
-
-}
-.auf{
-    font-family: Blippo !important;
-    font-size:5em !important;
-    padding-top:2%;
+span , .inscrit{
+  color: var(--main-color) !important;
 }
 
-input{
-  letter-spacing: 1px !important;
+.form-inputs {
+  padding-top: 10% !important;
+}
+h5,
+h6 {
+  font-size: large !important;
 }
 
-/* 
-                  =======================================================================================
-                  ==================================  Add Page ========================================== 
-                  =======================================================================================
-*/
+h6,
+.auf {
+  color: #cecaca !important;
+}
+.auf {
+  font-family: Blippo !important;
+  font-size: 5em !important;
+  padding-top: 2%;
+}
 
+input {
+  letter-spacing: initial !important;
+}
 
-
-
-
-/* 
-                  =======================================================================================
-                  =============================== Media Queries ========================================= 
-                  =======================================================================================
-*/
-
-
-@media all and (max-width: 500px) {
+@media all and (max-width: 1000px) {
   .welcome-party {
     display: none !important;
   }
 }
-
-@media all and (min-width: 600px) {
-  .welcome-party {
-    display: inline-block !important;
-  }
-}
+/*  */
