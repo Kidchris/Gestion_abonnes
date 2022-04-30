@@ -14,18 +14,16 @@ if (isset($_POST["submit"])) {
 
     $resultats = mysqli_query($connexion, $query);
     $row = mysqli_fetch_assoc($resultats);
-    echo "done";
 
-    if (count($row) > 0) {
+    if ($row) {
         header("Location: ./home.php");
         exit;
-
     }
- if (!$row){
-     header("Location: ./home.php");
-     exit;
-
- }
+    //  if (!$row)
+    else {
+        header("Location: ../index.php");
+        exit;
+    }
 }
 
 ?>

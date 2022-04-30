@@ -31,7 +31,6 @@ if (isset($_POST["submit"])) {
     $resultats = mysqli_query($connexion, $query);
     if ($resultats) {
         if ( $password == $password_2){
-
             header("Location: ../index.php?id=1");
             exit;
         }
