@@ -36,6 +36,7 @@ if (isset($_POST["submit"])) {
             exit;
         }
         else{
+            header("Location: ./admin_inscription.php");
             
         }
     } else {

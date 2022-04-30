@@ -35,15 +35,15 @@
     
                     <div class="uk-margin-small">
                         <div class="uk-inline">
-                            <span class="uk-form-icon" uk-icon="icon: receiver"></span>
-                            <input class="uk-input" type="text" placeholder="Mot de passe" 
+                            <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                            <input class="uk-input" type="password" placeholder="Mot de passe" 
                             name="password" required>
                         </div>
                     </div>
 
                     <div class="uk-margin-small">
                         <div class="uk-inline">
-                            <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+                            <span class="uk-form-icon" uk-icon="icon: lock"></span>
                             <input class="uk-input" type="text" placeholder="Confirmer le Mot de passe"
                              name="confirm" required>
                         </div>
