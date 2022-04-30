@@ -21,7 +21,7 @@ if (isset($_POST["submit"])) {
     }
     //  if (!$row)
     else {
-        header("Location: ../index.php");
+        header("Location: ../index.php?id=1");
         exit;
     }
 }

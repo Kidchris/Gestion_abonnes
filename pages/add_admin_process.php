@@ -30,37 +30,15 @@ if (isset($_POST["submit"])) {
             VALUES( '$nom', '$email', md5('$password') ) ";
     $resultats = mysqli_query($connexion, $query);
     if ($resultats) {
-        if ( $password == $password_2){
-            header("Location: ../index.php?id=1");
+        if ($password == $password_2) {
+            header("Location: ../index.php");
             exit;
-        }
-        else{
-            header("Location: admin_inscription.php");
+        } else {
+            header("Location: admin_inscription.php?id=3");
             exit;
         }
     } else {
-        echo " <div class='uk-container'>
-                <br> <div class='uk-alert-danger uk-text-center' uk-alert>
-                <a class='uk-alert-close' uk-close></a>
-                <br><br><br>
-                Error while trying to insert data Into Database<br> <br> <br> <br></div><br>
-                <br>
-                <br>
-                <br>
-                    <a href='./home.php'>
-                    <button class='uk-button uk-button'> Retour</button>
-                    </a>
-                    <br>
-                    <br>
-                    <br>
-        
-                    <a href='./add.php'>
-                    <button class='uk-button uk-button'>Ajouter</button>
-                    </a>
-                    </div>
-                ";
-        header("Location: ../index.php");
-
+        header("Location: ../index.php?id=1");
         exit;
     }
 }
