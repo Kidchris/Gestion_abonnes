@@ -37,7 +37,7 @@
         <div class="uk-width-auto uk-card uk-card-hover uk-card-body uk-align-center
          form-inputs uk-animation-toggle" tabindex="0">
             <p class="connect">Se connecter maintenant</p>
-            <form action="./pages/authentification.php" method="post" class="uk-align-center">
+            <form action="pages/authentification.php" method="post" class="uk-align-center">
                 <div class="uk-inline uk-animation-scale-up  uk-align-center">
                     <span class="uk-form-icon" uk-icon="user"></span>
                     <input type="email" name="email" id="email" 
