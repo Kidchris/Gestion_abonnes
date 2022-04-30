@@ -36,8 +36,8 @@ if (isset($_POST["submit"])) {
             exit;
         }
         else{
-            header("Location: ./admin_inscription.php");
-            
+            header("Location: admin_inscription.php");
+            exit;
         }
     } else {
         echo " <div class='uk-container'>
@@ -60,7 +60,7 @@ if (isset($_POST["submit"])) {
                     </a>
                     </div>
                 ";
-        // header("Location: ./add.php");
+        header("Location: ../index.php");
 
         exit;
     }
