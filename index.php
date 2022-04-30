@@ -40,14 +40,17 @@
             <form action="./pages/authentification.php" method="post" class="uk-align-center">
                 <div class="uk-inline uk-animation-scale-up  uk-align-center">
                     <span class="uk-form-icon" uk-icon="user"></span>
-                    <input type="email" name="email" id="email" class="uk-input uk-form-medium" required placeholder="Entrer votre email">
+                    <input type="email" name="email" id="email" 
+                    class="uk-input uk-form-medium" required placeholder="Entrer votre email">
                 </div> <br>
                 <div class="uk-inline uk-animation-scale-up  uk-align-center">
                     <span class="uk-form-icon" uk-icon="lock"></span>
-                    <input type="password" name="password" id="password" placeholder="Entrer votre mot de passe" class="uk-input uk-form-width-1-1 " required>
+                    <input type="password" name="password" 
+                    id="password" placeholder="Entrer votre mot de passe" class="uk-input uk-form-width-1-1 " required>
                 </div>
                 <br>
-                <input type="submit" value="Se connecter" class="uk-margin uk-button uk-button-default uk-align-center">
+                <input type="submit" name="submit"
+                 value="Se connecter" class="uk-margin uk-button uk-button-default uk-align-center">
                 <br>
                 <a href="pages/admin_inscription.php">
                     <p class="uk-margin uk-button uk-text-bold uk-text-align-right " style="color: #aa0a30;">Inscription </p>

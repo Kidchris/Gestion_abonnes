@@ -36,10 +36,6 @@ include("./connection.php")
     </nav>
     <?php
     $query = "SELECT * FROM `abonne` order by dateDebutAbonnement DESC";
-    // if(isset($_POST["search"])){
-    //     $nom = $_POST["nom"];
-    //     $query = "SELECT * FROM `abonne` WHERE nom LIKE '$nom' order by dateDebutAbonnement DESC";
-    // }
     $resultats = mysqli_query($connexion, $query);
     ?>
 

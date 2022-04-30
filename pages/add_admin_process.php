@@ -22,15 +22,22 @@ if (isset($_POST["submit"])) {
 
     $nom = $_POST["nom"];
     $password = $_POST["password"];
+    $password_2 = $_POST["confirm"];
     $email = $_POST["email"];
 
 
-    $query = "insert into `admin` (`nom`, `email`, `pwd`)
-            VALUES('$nom', '$email', md5($password) )";
+    $query = " insert into `admin` (`nom`, `email` ,  `pwd` )
+            VALUES( '$nom', '$email', md5('$password') ) ";
     $resultats = mysqli_query($connexion, $query);
     if ($resultats) {
-        header("Location: ./home.php?id=1");
-        exit;
+        if ( $password == $password_2){
+
+            header("Location: ../index.php?id=1");
+            exit;
+        }
+        else{
+            
+        }
     } else {
         echo " <div class='uk-container'>
                 <br> <div class='uk-alert-danger uk-text-center' uk-alert>

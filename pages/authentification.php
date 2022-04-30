@@ -1,17 +1,20 @@
 <?php
-
 include("./connection.php");
+?>
 
-$username = $_POST["username"];
-$password = $_POST["password"];
-$sql = "SELECT email, password FROM `admin` WHERE email = '$username' AND pwd = md5('$password')";
-$result = mysqli_query($connexion, $sql);
 
-if($result == false) {
-  header("Location: ./home.php?id=1");
-  exit;
+<?php
+
+if (isset($_POST["submit"])) {
+    // $nom = $_POST["nom"];
+    $password = $_POST["password"];
+    $password = md5('$password');
+    $email = $_POST["email"];
+    $query = "SELECT email, pw FROM `admin` WHERE email = '$email' AND pwd='$password' ";
+    //  printf($query);
+    $resultats = mysqli_query($connexion, $query);
+    $row = mysqli_fetch_assoc($resultats);
+    print_r($row);
 }
-else{
-    header("Location: ../index.php?id=1");
-}
+
 ?>

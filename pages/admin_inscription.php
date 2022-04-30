@@ -45,7 +45,7 @@
                         <div class="uk-inline">
                             <span class="uk-form-icon" uk-icon="icon: receiver"></span>
                             <input class="uk-input" type="text" placeholder="Confirmer le Mot de passe"
-                             name="telephone" required>
+                             name="confirm" required>
                         </div>
                     </div>
         
