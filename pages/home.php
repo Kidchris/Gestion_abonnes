@@ -34,12 +34,29 @@ include("./connection.php")
 
         </div>
     </nav>
+
+    <?php
+    if (isset($_GET["id"])) {
+
+        if ($_GET["id"] == 2) {
+
+            echo '
+                    <div class="uk-alert-success uk-width-1-3 uk-position-top-right
+                     " uk-alert role="alert">
+                    <a class="uk-alert-close" uk-close></a>
+                    <p>Utilisateur ajoute avec success!</p>
+                    </div> ';
+        }
+    }
+    ?>
+
+
     <?php
     $query = "SELECT * FROM `abonne` order by dateDebutAbonnement DESC";
     $resultats = mysqli_query($connexion, $query);
     ?>
 
-    <div class="uk-child-width-1-2@s uk uk-text-center uk-flex-center uk-margin-large" uk-grid>
+    <div class="uk-child-width-1-2@s  uk uk-text-center uk-flex-center uk-margin-large" uk-grid>
         <div class="uk-child-width-1-2@s" uk-grid>
 
             <?php
@@ -50,7 +67,10 @@ include("./connection.php")
 
                     <div class="uk-card uk-background-muted uk-card-small uk-card-body uk-card-hover">
                         <div class="uk-flex">
-                            <img class="uk-border-circle uk-align-center" width="190" height="190" src='data:image/jpeg;base64,<?php echo base64_encode($row["image"]); ?>' style="border: 3px solid #aa0a30; height: 190px !important;">
+                            <img class="uk-border-circle uk-align-center" 
+                            width="190" height="190" 
+                            src='data:image/jpeg;base64,<?php echo base64_encode($row["image"]); ?>' 
+                            style="border: 3px solid #aa0a30; height: 190px !important;">
                             <button class="uk-button uk-badge" type="button">Options</button>
                             <div uk-dropdown="mode: click">
                                 <ul class="uk-nav uk-dropdown-nav">
