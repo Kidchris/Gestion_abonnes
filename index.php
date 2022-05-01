@@ -23,7 +23,7 @@
             <div class="uk-padding-small"></div>
             <img src="./images/logo/logo-v3.jpg" alt="" class="uk-padding-small ">
         </div>
-        <div class="uk-width-1-3 uk-card uk-card-hover uk-card-body uk-align-center
+        <div class="uk-width-1-3@m uk-card uk-card-hover uk-card-body uk-align-center
          form-inputs uk-animation-toggle" tabindex="0">
 
             <form action="pages/authentification.php" method="post" class="uk-align-center">

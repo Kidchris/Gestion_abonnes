@@ -14,10 +14,12 @@
     <br>
     <br>
 
-    <div class="uk-grid uk-align-center uk-width-1-3 uk-card uk-card-default add-main ">
+    <div class="uk-grid uk-align-center uk-width-1-3@m uk-card uk-card-default add-main ">
 
-        <form action="./add_admin_process.php" method="post" class="uk-background-muted uk-grid uk-align-center" uk-grid>
-            <img src="../images/logo/logo-v3.jpg" alt="" width="200px" height="" class="add-img  uk--center" height="200px">
+        <form action="./add_admin_process.php" method="post" 
+        class="uk-background-muted uk-grid uk-align-center" uk-grid>
+            <img src="../images/logo/logo-v3.jpg" alt="" width="200px" height="" 
+            class="add-img  uk--center" height="200px">
             <div class="uk-grid uk-algin-center ">
                 <?php
                 if (isset($_GET["id"])) {
