@@ -56,14 +56,15 @@ include("./connection.php")
     $resultats = mysqli_query($connexion, $query);
     ?>
 
-    <div class="uk-child-width-1-2@s  uk uk-text-center uk-flex-center uk-margin-large" uk-grid>
-        <div class="uk-child-width-1-2@s" uk-grid>
+    <div class=" uk-flex 
+    uk-flex-column@m   uk-flex-row-reverse@s uk-text-center uk-flex-center uk-margin-large" uk-grid>
+        <div class=" uk-width-2-3 uk-child-width-1-2@m" uk-grid>
 
             <?php
 
             while ($row = mysqli_fetch_assoc($resultats)) : ?>
 
-                <div>
+                <div class="uk-container">
 
                     <div class="uk-card uk-background-muted uk-card-small uk-card-body uk-card-hover">
                         <div class="uk-flex">
@@ -104,9 +105,9 @@ include("./connection.php")
 
 
         </div>
-        <div class="uk-padding-small uk-child-width-1-2@s">
+        <div class="uk-padding-small uk-width-1-3@s">
             <div>
-                <a href="./add.php">
+                <a href="./add.php" id="add">
                     <div class="uk-card ik-card-large uk-background-muted uk-card-body uk-card-hover">
                         <br>
                         <br>
@@ -125,7 +126,8 @@ include("./connection.php")
         </div>
     </div>
 
-    <a class="uk-button uk-button-large uk-position-small uk-position-bottom-right" href="#target" uk-scroll style="position:fixed !important;" uk-icon="triangle-up">Haut</a>
+    <a class="uk-button uk-button-large uk-position-small uk-position-bottom-right" 
+    href="#add" uk-scroll style="position:fixed !important;" uk-icon="plus">Ajout</a>
     <script src="../assets/js/uikit.min.js"></script>
     <script src="../assets/js/uikit-icons.min.js"></script>
 </body>
