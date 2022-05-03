@@ -63,7 +63,6 @@ if (isset($_POST["submit"])) {
                     </a>
                     </div>
                 ";
-                // header("Location: ./add.php");
 
                 exit;
             }
@@ -89,7 +88,6 @@ if (isset($_POST["submit"])) {
             </a>
             </div>
         ";
-        // header("Location: ./add.php");
 
         exit;
     }

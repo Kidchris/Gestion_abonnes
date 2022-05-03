@@ -35,14 +35,9 @@ if (isset($_POST["submit"])) {
             header("Location: ../index.php");
             exit;
         }
-    } 
-    else {
+    } else {
         header("Location: ./admin_inscription.php?id=3");
-        // header("Location: ../index.php?id=1");
-
-        // exit;
-    
-}
+    }
 }
 ?>
 

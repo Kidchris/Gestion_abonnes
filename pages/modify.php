@@ -7,7 +7,6 @@ $id = $_GET["id"];
 $query = "SELECT * FROM `abonne` WHERE id=$id";
 $resultats = mysqli_query($connexion, $query);
 $row = mysqli_fetch_assoc($resultats);
-// echo $row;
 
 $nom = $row["nom"];
 $telephone = $row["numeroTelephone"];
@@ -35,9 +34,6 @@ $date_fin = $row["dateFinAbonnement"];
 
 <body>
 
-    <!-- <br> -->
-    <!-- <br> -->
-    <!-- <br> -->
 
     <div class="uk-grid uk-align-center uk-width-1-3 uk-card uk-card-default add-main ">
 
@@ -64,13 +60,6 @@ $date_fin = $row["dateFinAbonnement"];
                             <input class="uk-input" type="text" name="telephone" v value="<?php echo $telephone ?>">
                     </div>
                 </div>
-
-                <!-- <div class=" uk-margin-small">
-                            <div class="uk-inline">
-                                <span class="uk-form-icon" uk-icon="icon: calendar"></span>
-                                <input class="uk-input" type="text" onfocus="(this.type='date')" placeholder="Date de debut" name="date_debut">
-                            </div>
-                        </div> -->
 
                         <div class="uk-margin-small">
                             <div class="uk-inline">
@@ -113,10 +102,8 @@ $date_fin = $row["dateFinAbonnement"];
          ";
 
 
-        // $query = "SELECT * FROM `abonne` WHERE id=$id";
         $resultats = mysqli_query($connexion, $query);
         if ($resultats){
-            // echo "<br> Done";
         header("Location: ./home.php");
 
         }

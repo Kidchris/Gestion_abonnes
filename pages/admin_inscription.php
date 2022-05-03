@@ -23,13 +23,6 @@
             <div class="uk-grid uk-algin-center ">
                 <?php
                 if (isset($_GET["id"])) {
-                    if ($_GET["id"] == 1) {
-                        echo '
-                <div class="uk-alert-danger " uk-alert uk-sticky="duration:5;" >
-                    <a class="uk-alert-close" uk-close></a>
-                    <p>Mot de passe ou nom d\'utilsateur incorrect!</p>
-                </div> ';
-                    }
                     if ($_GET["id"] == 3) {
                         echo '
                 <div class="uk-alert-danger " uk-alert uk-sticky="duration:5;" >

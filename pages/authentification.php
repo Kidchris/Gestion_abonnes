@@ -19,7 +19,6 @@ if (isset($_POST["submit"])) {
         header("Location: ./home.php");
         exit;
     }
-    //  if (!$row)
     else {
         header("Location: ../index.php?id=1");
         exit;

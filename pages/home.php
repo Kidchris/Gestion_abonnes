@@ -24,8 +24,6 @@ include("./connection.php")
         </div>
         <div class="uk-navbar uk-navbar-right right">
             <form action="javascript:void(0)">
-                <!-- <input class="uk-input uk-form-width-small" type="text" placeholder="entrez un nom" name="nom">
-                <button class="uk-button uk-button-default" name="search"><span uk-icon="search"></span></button> -->
                 <a href="../index.php">
                     <div class="uk-button uk-button-default"><span uk-icon="sign-out"></span>Quitter</div>
                 </a>

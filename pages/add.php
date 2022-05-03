@@ -14,10 +14,6 @@
 
 <body>
 
-    <!-- <br> -->
-    <!-- <br> -->
-    <!-- <br> -->
-
     <div class="uk-grid uk-align-center uk-width-1-3 uk-card uk-card-default add-main ">
 
         <form action="./add_process.php" method="post" class="uk-background-muted uk-grid uk-align-center" enctype="multipart/form-data" uk-grid>
