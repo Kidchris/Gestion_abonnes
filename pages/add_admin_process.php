@@ -26,21 +26,23 @@ if (isset($_POST["submit"])) {
     $email = $_POST["email"];
 
 
-    $query = " insert into `admin` (`nom`, `email` ,  `pwd` )
-            VALUES( '$nom', '$email', md5('$password') ) ";
-    $resultats = mysqli_query($connexion, $query);
-    if ($resultats) {
-        if ($password == $password_2) {
+
+    if ($password == $password_2) {
+        $query = " insert into `admin` (`nom`, `email` ,  `pwd` )
+        VALUES( '$nom', '$email', md5('$password') ) ";
+        $resultats = mysqli_query($connexion, $query);
+        if ($resultats) {
             header("Location: ../index.php");
             exit;
-        } else {
-            header("Location: admin_inscription.php?id=3");
-            exit;
         }
-    } else {
-        header("Location: ../index.php?id=1");
-        exit;
-    }
+    } 
+    else {
+        header("Location: ./admin_inscription.php?id=3");
+        // header("Location: ../index.php?id=1");
+
+        // exit;
+    
+}
 }
 ?>
 
